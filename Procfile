@@ -1,1 +1,0 @@
-web: npm install && npm run prisma migrate deploy && npm run dev
