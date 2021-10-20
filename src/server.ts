@@ -1,5 +1,7 @@
 import { serverHttp } from "./app";
 
-serverHttp.listen(8000, () => {
+const Port = process.env.PORT || 8000;
+
+serverHttp.listen(Port, () => {
 	console.log("server started at http://localhost:3000");
 });
