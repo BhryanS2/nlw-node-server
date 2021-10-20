@@ -2,18 +2,10 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-<a href="https://www.nodejs.org" style="display: flex; align-items: center;gap: 5px">
-  <img src="https://nodejs.org/static/images/favicons/favicon.ico" width="24" height="24"/>
-  <p>NodeJS</p>
-</a>
-<a href="https://www.prisma.io/" style="display: flex; align-items: center;gap: 5px">
-  <img src="https://www.prisma.io/images/apple-touch-icon.png" width="24" height="24" />
-  <p>Prisma</p>
-</a>
-<a href="https://www.typescriptlang.org/" style="display: flex; align-items: center;gap: 5px">
-  <img src="https://www.typescriptlang.org/icons/icon-512x512.png?v=8944a05a8b601855de116c8a56d3b3ae" width="24" height="24"/>
-  <p>TypeScript</p>
-</a>
+[![Nodejs Badge](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://www.nodejs.org)
+[![SokectIo Badge](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white)](https://socket.io/)
+[![Prisma Badge](https://img.shields.io/badge/prisma-1B222D?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![Typescript Badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 ## Como executar
 
