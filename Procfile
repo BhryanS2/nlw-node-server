@@ -1,2 +1,1 @@
-npm run prisma migrate deplay
-npm run dev
+web: npm run prisma migrate deploy && npm run dev
