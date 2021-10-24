@@ -15,16 +15,17 @@ interface UserReponse {
 }
 
 class AuthenticateUserService {
-	async execute(code: string) {
+	async execute(code: string, client: string, secret: string) {
 		//recuperando o acccess token
 		const url = "hettps://github.com/login/oauth/access_token";
+
 		const { data: accessTokenResponse } = await axios.post<AccessTokenResponse>(
 			url,
 			null,
 			{
 				params: {
-					client_id: process.env.GITHUB_CLIENT_ID,
-					client_secret: process.env.GITHUB_CLIENT_SECRET,
+					client_id: client,
+					client_secret: secret,
 					code,
 				},
 				headers: {
@@ -73,12 +74,12 @@ class AuthenticateUserService {
 			{
 				subject: user.id,
 				expiresIn: "1d",
-			}
+			},
 		);
 
 		return {
 			token,
-			user
+			user,
 		};
 	}
 }

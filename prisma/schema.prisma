@@ -1,8 +1,9 @@
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
+//env("DATABASE_URL")
 generator client {
   provider = "prisma-client-js"
 }
@@ -28,4 +29,13 @@ model Message {
   user User @relation(fields: [user_id], references: [id])
 
   @@map("messages")
+}
+
+model Secret {
+  id         String   @id @default(uuid())
+  client     String
+  secret     String
+  created_at DateTime @default(now())
+
+  @@map("secrets")
 }
