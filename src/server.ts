@@ -3,5 +3,5 @@ import { serverHttp } from "./app";
 const Port = process.env.PORT || 8000;
 
 serverHttp.listen(Port, () => {
-	console.log("server started at http://localhost:8000");
+	console.log(`server started at ${Port}`);
 });
