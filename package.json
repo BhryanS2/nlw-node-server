@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev --exit-child src/server.ts",
-    "start": "tsc & node src/server.js"
+    "start": "tsc & node dist/server.js"
   },
   "dependencies": {
     "@prisma/client": "3.2.1",
