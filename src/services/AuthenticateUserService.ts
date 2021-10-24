@@ -17,7 +17,7 @@ interface UserReponse {
 class AuthenticateUserService {
 	async execute(code: string, client: string, secret: string) {
 		//recuperando o acccess token
-		const url = "hettps://github.com/login/oauth/access_token";
+		const url = "https://github.com/login/oauth/access_token";
 
 		const { data: accessTokenResponse } = await axios.post<AccessTokenResponse>(
 			url,
